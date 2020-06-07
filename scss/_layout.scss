@@ -3,9 +3,11 @@
 .navbar{
  box-shadow: 0 0 5px grey;
 }
+
 .navbar-light .navbar-nav .nav-link {
     color: $mainColor;
 }
+
 .navbar-light .navbar-brand{
     font-family: logo;
     font-size: 1.5rem;
@@ -15,14 +17,17 @@
 .main-header{
     overflow: hidden
 }
+
 .header_content{
     background: url("#{$imgPath}/header.jpg") no-repeat center/cover;
     height: 100vh;
     margin-top: 4rem;
 }
+
 .header-title{
     padding-top: 4rem;
 }
+
 .line{
     width: 80%;
     margin: 3rem auto;
@@ -30,6 +35,7 @@
     background: $mainColor;
     height: .3rem;
 }
+
 .header_btn{
     width: 40%;
     display:block;
@@ -40,16 +46,17 @@
     padding: .6rem;
     font-size: 1.4rem;
     box-shadow: 0 0 5px black;
-    transition: all 1s ease-in-out;
+    transition: all .2s ease-in-out;
     &:hover{
         background: $mainColor;
         color:$colorWhite;
     }
 }
+
 // text Effect animation
 span{
     opacity: 1;
-    color: lighten($color: $mainColor, $amount: 40%);
+    color: lighten($color: $mainColor, $amount: 35%);
     transition: all 1s ease;
 }
 
@@ -58,3 +65,41 @@ span.animate{
     color: $mainColor;
     font-weight: 300;
 }
+
+.headerP{
+    color:$colorGray;
+    font-size: 1.4rem;
+}
+
+.headerH{
+    color: $mainColor;
+    font-family: EXTRASerif;
+}
+
+.animateText{
+    margin-top:.5rem;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+}
+
+// header curser blinks effect 
+.cursor{
+    width: 3px;
+    background-color: $mainColor;
+    height: 100%;
+    animation: blink 1s infinite;
+}
+.typing{
+    animation: none;
+}
+@keyframes blink{
+    0% {background-color: $mainColor;}
+    49% {background-color: transparent;}
+    50% {background-color: $mainColor;}
+    99% {background-color: transparent;}
+    100% {background-color: $mainColor;}
+}
+

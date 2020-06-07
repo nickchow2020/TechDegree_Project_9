@@ -3,3 +3,8 @@
     font-family: logo;
     src: url("#{$fontPath}/hypebeastRegular.ttf");
   }
+
+@font-face{
+  font-family: EXTRASerif;
+  src: url("#{$fontPath}/EXTRASerif-Regular.ttf")
+}

@@ -1,6 +1,9 @@
 @font-face {
   font-family: logo;
   src: url("../fonts/hypebeastRegular.ttf"); }
+@font-face {
+  font-family: EXTRASerif;
+  src: url("../fonts/EXTRASerif-Regular.ttf"); }
 * {
   margin: 0;
   padding: 0;
@@ -53,19 +56,56 @@ body {
   padding: .6rem;
   font-size: 1.4rem;
   box-shadow: 0 0 5px black;
-  transition: all 1s ease-in-out; }
+  transition: all .2s ease-in-out; }
   .header_btn:hover {
     background: tomato;
     color: #fff; }
 
 span {
   opacity: 1;
-  color: white;
+  color: snow;
   transition: all 1s ease; }
 
 span.animate {
   opacity: 1;
   color: tomato;
   font-weight: 300; }
+
+.headerP {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.4rem; }
+
+.headerH {
+  color: tomato;
+  font-family: EXTRASerif; }
+
+.animateText {
+  margin-top: .5rem;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem; }
+
+.cursor {
+  width: 3px;
+  background-color: tomato;
+  height: 100%;
+  animation: blink 1s infinite; }
+
+.typing {
+  animation: none; }
+
+@keyframes blink {
+  0% {
+    background-color: tomato; }
+  49% {
+    background-color: transparent; }
+  50% {
+    background-color: tomato; }
+  99% {
+    background-color: transparent; }
+  100% {
+    background-color: tomato; } }
 
 /*# sourceMappingURL=style.css.map */
