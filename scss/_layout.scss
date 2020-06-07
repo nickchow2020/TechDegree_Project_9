@@ -1,0 +1,60 @@
+//main-header Styles
+// Navbar Layout 
+.navbar{
+ box-shadow: 0 0 5px grey;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: $mainColor;
+}
+.navbar-light .navbar-brand{
+    font-family: logo;
+    font-size: 1.5rem;
+}
+
+// header content layout
+.main-header{
+    overflow: hidden
+}
+.header_content{
+    background: url("#{$imgPath}/header.jpg") no-repeat center/cover;
+    height: 100vh;
+    margin-top: 4rem;
+}
+.header-title{
+    padding-top: 4rem;
+}
+.line{
+    width: 80%;
+    margin: 3rem auto;
+    border: none;
+    background: $mainColor;
+    height: .3rem;
+}
+.header_btn{
+    width: 40%;
+    display:block;
+    margin: auto;
+    border: none;
+    background: $colorWhite;
+    color: $mainColor;
+    padding: .6rem;
+    font-size: 1.4rem;
+    box-shadow: 0 0 5px black;
+    transition: all 1s ease-in-out;
+    &:hover{
+        background: $mainColor;
+        color:$colorWhite;
+    }
+}
+// text Effect animation
+span{
+    opacity: 1;
+    color: lighten($color: $mainColor, $amount: 40%);
+    transition: all 1s ease;
+}
+
+span.animate{
+    opacity: 1;
+    color: $mainColor;
+    font-weight: 300;
+}
