@@ -39,13 +39,15 @@
 }
 
 .header_btn{
-    width: 40%;
+    width: 30%;
     display:block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
     border: none;
     background: $colorWhite;
     color: $mainColor;
-    padding: .6rem;
+    padding: .3rem;
     font-size: 1.4rem;
     box-shadow: 0 0 5px black;
     transition: all .2s ease-in-out;
@@ -104,6 +106,7 @@ span.animate{
     99% {background-color: transparent;}
     100% {background-color: $mainColor;}
 }
+
 // Arrow Area Layout 
 .arrowArea{
     width: 100%;

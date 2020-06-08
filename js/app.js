@@ -41,7 +41,7 @@ function type(){
         setTimeout(type,300);
     }else{
         cursor.classList.remove("typing");
-        setTimeout(erase,1000);
+        setTimeout(erase,2000);
     }
 }
 
@@ -58,7 +58,7 @@ function erase(){
         if(arrayIndex >= blinkWorks.length){
             arrayIndex = 0;
         }
-        setTimeout(type,2000);
+        setTimeout(type,1000);
     }
 }
 
