@@ -70,12 +70,14 @@ document.addEventListener("DOMContentLoaded",()=>{
 //****************   ******************/
 // modal window Wechat Animation
 //****************   ******************/
+const svgWechat = document.querySelector(".wechatIcon");
+const svgQr = document.querySelector(".wechatQRdiv");
 
-function wechatClick() {
-    var x = document.getElementById("wechatQRdiv");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
+svgWechat.addEventListener("click",()=>{
+    if(svgQr.style.display === "block"){
+        svgQr.style.display = "none";
+    }else{
+        svgQr.style.display = "block"
     }
-  }
+
+})
