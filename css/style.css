@@ -166,4 +166,54 @@ span.animate {
 .moreme {
   color: tomato; }
 
+.svgicons {
+  width: 65%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.githubIcon {
+  width: 70px;
+  fill: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: fill .2s ease-in-out; }
+  .githubIcon:hover {
+    fill: tomato; }
+
+.wechatIcon {
+  padding-bottom: .5rem;
+  width: 50px;
+  fill: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: fill .2s ease-in-out; }
+  .wechatIcon:hover {
+    fill: tomato; }
+
+.treehouseIcon {
+  padding-top: .5rem;
+  width: 45px;
+  fill: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: fill .2s ease-in-out; }
+  .treehouseIcon:hover {
+    fill: tomato; }
+
+.facebookIcon {
+  width: 50px;
+  padding-top: .2rem;
+  fill: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: fill .2s ease-in-out; }
+  .facebookIcon:hover {
+    fill: tomato; }
+
+.wechatQRdiv {
+  width: 70%;
+  margin: auto;
+  display: none; }
+
+.wechatQR {
+  width: 100%; }
+
 /*# sourceMappingURL=style.css.map */
