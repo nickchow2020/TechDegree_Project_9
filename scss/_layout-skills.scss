@@ -1,0 +1,27 @@
+.skillHeader{
+    color: $mainColor;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+
+.skilldes{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+.skillsIcons{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+    svg{
+        width: 140px;
+        height: 140px;
+        fill: $colorGray;
+        transition: all .3s;
+        cursor: pointer;
+        &:hover{
+            fill: $mainColor;
+        }
+    }
+}

@@ -16,7 +16,17 @@ body {
   background: linear-gradient(white, #ffe5e0);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  display: flex;
+  flex-direction: column; }
+
+.main-content {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  padding: 0 1rem; }
 
 .navbar {
   box-shadow: 0 0 5px grey; }
@@ -215,5 +225,31 @@ span.animate {
 
 .wechatQR {
   width: 100%; }
+
+.skillHeader {
+  color: tomato;
+  margin-top: 6rem;
+  margin-bottom: 1rem; }
+
+.skilldes {
+  font-size: 1.2rem;
+  text-align: center; }
+
+.skillsIcons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+  .skillsIcons svg {
+    width: 140px;
+    height: 140px;
+    fill: rgba(0, 0, 0, 0.6);
+    transition: all .3s;
+    cursor: pointer; }
+    .skillsIcons svg:hover {
+      fill: tomato; }
+
+.main-footer {
+  height: 3rem;
+  background: tomato;
+  margin-top: auto; }
 
 /*# sourceMappingURL=style.css.map */
