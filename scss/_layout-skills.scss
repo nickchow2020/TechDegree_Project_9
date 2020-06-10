@@ -25,3 +25,23 @@
         }
     }
 }
+
+//  Tooltip Layout
+.iconWrap{
+    position: relative;
+}
+
+.span{
+    display: inline-block;
+    text-align: center;
+    background: $mainColor;
+    color: white;
+    opacity: 0;
+    border-radius: 10px;
+    padding: 0 1rem;
+    position: fixed;
+}
+
+.iconWrap:hover .span{
+    opacity: 1;
+}

@@ -79,5 +79,20 @@ svgWechat.addEventListener("click",()=>{
     }else{
         svgQr.style.display = "block"
     }
-
 })
+
+//********************************** */
+// Adding SVG hover with tooltips
+//********************************** */
+for(let i = 1; i < 10; i ++ ){
+    const iconDiv = document.querySelectorAll(".iconWrap");
+    const span = document.querySelectorAll(".span");
+    iconDiv[i-1].onmousemove = function(e){
+        let x = e.clientX;
+        let y = e.clientY;
+    
+        span[i-1].style.top = (y + 10) + "px";
+        span[i-1].style.left = (x + 10) + "px";}
+}
+
+
