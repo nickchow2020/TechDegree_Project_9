@@ -16,6 +16,9 @@ a {
   text-decoration: none;
   color: black; }
 
+input {
+  border: none; }
+
 body {
   background: linear-gradient(white, #ffe5e0);
   background-repeat: no-repeat;
@@ -28,7 +31,6 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1rem;
   background-color: #fff;
   padding: 0 1rem; }
 
@@ -283,7 +285,8 @@ span.animate {
   margin-right: auto;
   margin-bottom: 1.5rem;
   background: orange;
-  position: relative; }
+  position: relative;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6); }
 
 .imageProject {
   width: 100%;
@@ -346,6 +349,75 @@ span.animate {
   .btn-github:hover {
     background: white;
     color: tomato; }
+
+.contact {
+  width: 95%;
+  margin: auto; }
+
+.messageHeader,
+.contactHeader {
+  color: tomato;
+  margin-top: 6rem;
+  margin-bottom: 1rem; }
+
+.form {
+  width: 100%; }
+
+.input {
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 0 .5rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+  transition: all .3s; }
+  .input:focus {
+    border-bottom: solid tomato 3px; }
+
+.nameLabel {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0;
+  margin: .5rem 0; }
+
+.formBtn {
+  width: 50%;
+  border: none;
+  display: block;
+  background: tomato;
+  color: #fff;
+  padding: .5rem 0;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  transition: all .4s; }
+  .formBtn:hover {
+    background: #ffb9ad;
+    color: rgba(0, 0, 0, 0.6); }
+
+.emailWrap,
+.phoneWrap {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem; }
+
+.email,
+.phone {
+  width: 50px;
+  transition: all .4s;
+  cursor: pointer; }
+  .email:hover,
+  .phone:hover {
+    fill: tomato; }
+
+.emailaddress,
+.phoneNumber {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.6); }
 
 .main-footer {
   height: 3rem;
