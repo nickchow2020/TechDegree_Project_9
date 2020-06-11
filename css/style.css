@@ -12,6 +12,10 @@
 *:focus {
   outline: 0 !important; }
 
+a {
+  text-decoration: none;
+  color: black; }
+
 body {
   background: linear-gradient(white, #ffe5e0);
   background-repeat: no-repeat;
@@ -262,6 +266,86 @@ span.animate {
 
 .iconWrap:hover .span {
   opacity: 1; }
+
+.projectHeader {
+  color: tomato;
+  margin-top: 6rem;
+  margin-bottom: 1rem; }
+
+.projectdes {
+  font-size: 1.2rem;
+  text-align: center; }
+
+.projectWrap {
+  width: 95%;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  background: orange;
+  position: relative; }
+
+.imageProject {
+  width: 100%;
+  height: 100%; }
+
+.hoverImage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 99, 71, 0.8);
+  opacity: 0;
+  transition: all .5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  cursor: pointer; }
+
+.projectsummery {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  text-shadow: 0 0 1px white; }
+
+.projectWrap:hover .hoverImage {
+  opacity: 1; }
+
+.btnWrap {
+  width: 40%; }
+
+.btn-live {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  display: block;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  transition: all .3s; }
+  .btn-live:hover {
+    background: #333333;
+    color: tomato; }
+
+.btn-github {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  display: block;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  transition: all .3s; }
+  .btn-github:hover {
+    background: white;
+    color: tomato; }
 
 .main-footer {
   height: 3rem;
