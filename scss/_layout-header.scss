@@ -6,12 +6,23 @@
 
 .navbar-light .navbar-nav .nav-link {
     color: $mainColor;
+
+}
+
+.navbar-nav{
+    @media(min-width: 768px){
+        margin-right: 5rem;
+    }
 }
 
 .navbar-light .navbar-brand{
     font-family: logo;
     font-size: 1.5rem;
+    @media(min-width: 768px){
+        margin-left: 5rem;
+    }
 }
+
 
 // header content layout
 .main-header{
@@ -28,6 +39,9 @@
 
 .header-title{
     padding-top: 4rem;
+    @media(min-width: 768px){
+        font-size: 4rem;
+    }
 }
 
 .line{
@@ -36,6 +50,9 @@
     border: none;
     background: $mainColor;
     height: .3rem;
+    @media(min-width: 768px){
+        height: .6rem;
+    }
 }
 
 .header_btn{
@@ -51,6 +68,11 @@
     font-size: 1.4rem;
     box-shadow: 0 0 5px black;
     transition: all .2s ease-in-out;
+    @media(min-width: 768px){
+        border-radius: 10px;
+        padding: .6rem;
+        font-size: 1.8rem;
+    }
     &:hover{
         background: $mainColor;
         color:$colorWhite;
@@ -72,7 +94,9 @@ span.animate{
 
 .headerP{
     color:$colorGray;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    font-family: EXTRASerif;
+    text-transform: capitalize;
 }
 
 .headerH{
@@ -128,6 +152,10 @@ span.animate{
     border-right: solid 4px $mainColor;
     transform: rotate(45deg);
     animation: arrowBlink 2s infinite;
+    @media(min-width:768px){
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .arrow:nth-child(2){

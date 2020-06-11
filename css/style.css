@@ -40,9 +40,16 @@ body {
 .navbar-light .navbar-nav .nav-link {
   color: tomato; }
 
+@media (min-width: 768px) {
+  .navbar-nav {
+    margin-right: 5rem; } }
+
 .navbar-light .navbar-brand {
   font-family: logo;
   font-size: 1.5rem; }
+  @media (min-width: 768px) {
+    .navbar-light .navbar-brand {
+      margin-left: 5rem; } }
 
 .main-header {
   overflow: hidden; }
@@ -56,6 +63,9 @@ body {
 
 .header-title {
   padding-top: 4rem; }
+  @media (min-width: 768px) {
+    .header-title {
+      font-size: 4rem; } }
 
 .line {
   width: 80%;
@@ -63,6 +73,9 @@ body {
   border: none;
   background: tomato;
   height: .3rem; }
+  @media (min-width: 768px) {
+    .line {
+      height: .6rem; } }
 
 .header_btn {
   width: 30%;
@@ -77,6 +90,11 @@ body {
   font-size: 1.4rem;
   box-shadow: 0 0 5px black;
   transition: all .2s ease-in-out; }
+  @media (min-width: 768px) {
+    .header_btn {
+      border-radius: 10px;
+      padding: .6rem;
+      font-size: 1.8rem; } }
   .header_btn:hover {
     background: tomato;
     color: #fff; }
@@ -93,7 +111,9 @@ span.animate {
 
 .headerP {
   color: rgba(0, 0, 0, 0.6);
-  font-size: 1.4rem; }
+  font-size: 1.6rem;
+  font-family: EXTRASerif;
+  text-transform: capitalize; }
 
 .headerH {
   color: tomato;
@@ -145,6 +165,10 @@ span.animate {
   border-right: solid 4px tomato;
   transform: rotate(45deg);
   animation: arrowBlink 2s infinite; }
+  @media (min-width: 768px) {
+    .arrow {
+      width: 30px;
+      height: 30px; } }
 
 .arrow:nth-child(2) {
   animation-delay: .2s; }
@@ -253,7 +277,7 @@ span.animate {
     .skillsIcons svg:hover {
       fill: tomato; }
 
-.iconWrap {
+.forjs {
   position: relative; }
 
 .span {
@@ -269,6 +293,65 @@ span.animate {
 .iconWrap:hover .span {
   opacity: 1; }
 
+@media (min-width: 768px) {
+  .skillDiv {
+    width: 100%;
+    height: 500px; }
+
+  .icon3dContainer {
+    width: 140px;
+    margin: auto;
+    position: relative;
+    margin-top: 9rem;
+    perspective: 1000px; }
+
+  .skillsIcons {
+    width: 100%;
+    position: absolute;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d; }
+
+  .skillsIcons:hover {
+    animation-play-state: paused;
+    cursor: pointer; }
+
+  .iconWrap {
+    position: absolute;
+    width: 100%;
+    overflow: hidden; }
+
+  .iconWrap:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px); }
+
+  .iconWrap:nth-child(2) {
+    transform: rotateY(40deg) translateZ(300px); }
+
+  .iconWrap:nth-child(3) {
+    transform: rotateY(80deg) translateZ(300px); }
+
+  .iconWrap:nth-child(4) {
+    transform: rotateY(120deg) translateZ(300px); }
+
+  .iconWrap:nth-child(5) {
+    transform: rotateY(160deg) translateZ(300px); }
+
+  .iconWrap:nth-child(6) {
+    transform: rotateY(200deg) translateZ(300px); }
+
+  .iconWrap:nth-child(7) {
+    transform: rotateY(240deg) translateZ(300px); }
+
+  .iconWrap:nth-child(8) {
+    transform: rotateY(280deg) translateZ(300px); }
+
+  .iconWrap:nth-child(9) {
+    transform: rotateY(320deg) translateZ(300px); }
+
+  @keyframes rotar {
+    from {
+      transform: rotateY(0deg); }
+    to {
+      transform: rotateY(360deg); } } }
 .projectHeader {
   color: tomato;
   margin-top: 6rem;
@@ -350,6 +433,17 @@ span.animate {
     background: white;
     color: tomato; }
 
+@media (min-width: 768px) {
+  .projectList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 2rem 1rem; }
+
+  .projectdes {
+    margin-bottom: 2rem; }
+
+  .imageProject {
+    border-radius: 20px; } }
 .contact {
   width: 95%;
   margin: auto; }
@@ -419,9 +513,29 @@ span.animate {
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.6); }
 
+@media (min-width: 768px) {
+  .contactWrap {
+    width: 50%;
+    margin: auto; }
+
+  .formBtn {
+    width: 30%; } }
 .main-footer {
   height: 3rem;
   background: tomato;
-  margin-top: auto; }
+  margin-top: auto;
+  width: 100%; }
+
+.main-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white; }
+  .main-footer a {
+    text-decoration: none;
+    margin-right: 1rem;
+    color: white; }
+    .main-footer a:hover {
+      color: black; }
 
 /*# sourceMappingURL=style.css.map */
