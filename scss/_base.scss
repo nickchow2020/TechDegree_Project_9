@@ -15,7 +15,12 @@ body{
     margin-right: auto;
     background-color: $colorWhite;
     padding: 0 1rem; 
-
+    @media(min-width:1024px){
+        width: 90%;
+        margin: auto;
+        max-width: 1650px;
+        padding: 0 2rem;
+    }
 }
 
 // Sticky footer layout

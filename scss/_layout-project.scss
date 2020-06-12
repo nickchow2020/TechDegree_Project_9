@@ -2,11 +2,17 @@
     color: $mainColor;
     margin-top: 6rem;
     margin-bottom: 1rem;
+    @media(min-width:1024px){
+        font-size: 4rem;
+}
 }
 
 .projectdes{
     font-size: 1.2rem;
     text-align: center;
+    @media(min-width:1024px){
+        font-size: 1.4rem;
+}
 }
 
 .projectWrap{

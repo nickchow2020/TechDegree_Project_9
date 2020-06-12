@@ -52,7 +52,7 @@
 //email and phone style
 .emailWrap,
 .phoneWrap{
-    width: 70%;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -83,5 +83,37 @@
 
     .formBtn{
         width: 30%;
+    }
+}
+
+@media(min-width: 1024px){
+    .contact{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .form,
+    .contactMe{
+        width: 50%;
+        max-width: 600px;
+    }
+    .contactMe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .formBtn{
+        width: 50%;
+        border-radius: 30;
+    }
+    .contactWrap{
+        width: 100%;
+        margin: auto;
+    }
+    .emailWrap,
+    .phoneWrap{
+        max-width: 300px;
     }
 }

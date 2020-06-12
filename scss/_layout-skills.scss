@@ -2,11 +2,17 @@
     color: $mainColor;
     margin-top: 6rem;
     margin-bottom: 1rem;
+    @media(min-width:1024px){
+            font-size: 4rem;
+    }
 }
 
 .skilldes{
     font-size: 1.2rem;
     text-align: center;
+    @media(min-width:1024px){
+        font-size: 1.4rem;
+}
 }
 
 
@@ -50,6 +56,9 @@
     .skillDiv{
         width: 100%;
         height: 500px;
+        @media(min-width:1024px){
+            height: 650px;
+        }
     }
 
     .icon3dContainer{
@@ -58,6 +67,9 @@
         position: relative;
         margin-top: 9rem;
         perspective: 1000px;
+        @media(min-width: 1024px){
+            perspective: 500px;
+        }
     }
 
     .skillsIcons{
