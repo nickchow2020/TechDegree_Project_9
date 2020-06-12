@@ -26,7 +26,7 @@ function animaText(){
 //****************   ******************/
 // Header Text Animation
 //****************   ******************/
-const blinkWorks = ["coding","do project","learning","workout"];
+const blinkWorks = ["coding","doing project","learning","workout"];
 const blinkText = document.querySelector(".headerP");
 const cursor = document.querySelector(".cursor");
 let arrayIndex = 0;
@@ -38,7 +38,7 @@ function type(){
         cursor.classList.add("typing");
         blinkText.textContent += blinkWorks[arrayIndex].charAt(charIndex);
         charIndex ++;
-        setTimeout(type,300);
+        setTimeout(type,200);
     }else{
         cursor.classList.remove("typing");
         setTimeout(erase,2000);
@@ -51,7 +51,7 @@ function erase(){
         cursor.classList.add("typing");
         blinkText.textContent = blinkWorks[arrayIndex].substring(0,charIndex-1);
         charIndex --;
-        setTimeout(erase,200)
+        setTimeout(erase,100)
     }else{
         cursor.classList.remove("typing");
         arrayIndex ++;
