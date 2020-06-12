@@ -464,9 +464,10 @@ span.animate {
   border-radius: 5px;
   margin-bottom: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-  transition: all .3s; }
+  transition: all .3s;
+  text-align: center; }
   .btn-live:hover {
-    background: #333333;
+    background-color: #333333;
     color: tomato; }
 
 .btn-github {
@@ -479,9 +480,10 @@ span.animate {
   border-radius: 5px;
   margin-bottom: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-  transition: all .3s; }
+  transition: all .3s;
+  text-align: center; }
   .btn-github:hover {
-    background: white;
+    background-color: white;
     color: tomato; }
 
 @media (min-width: 768px) {

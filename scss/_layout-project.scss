@@ -74,8 +74,9 @@
     margin-bottom: 8px;
     box-shadow: 0 0 5px $colorGray;
     transition: all .3s;
+    text-align: center;
     &:hover{
-        background: lighten($color: $colorBlack, $amount: 20%);
+        background-color: lighten($color: $colorBlack, $amount: 20%);
         color: $mainColor;
     }
 
@@ -92,8 +93,9 @@
     margin-bottom: 8px;
     box-shadow: 0 0 5px $colorGray;
     transition: all .3s;
+    text-align: center;
     &:hover{
-        background: lighten($color: $colorWhite, $amount: 20%);
+        background-color: lighten($color: $colorWhite, $amount: 20%);
         color: $mainColor;
     }
 
