@@ -10,7 +10,7 @@
     <title>Nick Portfolio</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header" id="home">
       <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">Nick Portfolio</a>
@@ -20,16 +20,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto text-center">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="#skill">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#project">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -45,11 +45,13 @@
           </div>
         </h3>
         <div class="arrowArea">
+          <a href="#skill">
           <div class="arrowWrap">
             <div class="arrow"></div>
             <div class="arrow"></div>
             <div class="arrow"></div>
           </div>
+          </a>
         </div>
       </div>
       <!-- Modal -->
@@ -67,7 +69,7 @@
                   <img src="img/avatar_round.jpg" alt="nick_avatar" class="avatar">
                 </div>
                 <p class="lead">
-                  Hello,My name is Nick Chow(Shumin Zhou),people just call me Nick,I'm used to be a warehouse worker,
+                  Hello,My name is Nick Chow(Shumin Zhou),friends just call me Nick,I'm used to be a warehouse worker,
                   woking on FBA(Fulfillment By Amazon),right now I'm become a Web Developer!!! Yeah.
                   I like Coding,and enjoy coding,I currently graduated treehouse Front-End Web Development TechDegree,
                   and my next step is become a Full-Stack JavaScript Developer.
@@ -114,7 +116,7 @@
         </div>
     </header>
     <main class="main-content">
-      <div class="skillDiv">
+      <div class="skillDiv" id="skill">
         <h1 class="text-center h2 skillHeader">Front-End Skills</h1>
         <p class="skilldes">
           I'm be familiar with front-End skills,HTML5,CSS3,Vanilla Javascript,jQuery,SASS,Bootstrap 4, SVG animation,
@@ -226,7 +228,7 @@
       </div>
       
       <div class="projectsDiv">
-        <h1 class="text-center h2 projectHeader">Front-End Projects</h1>
+        <h1 class="text-center h2 projectHeader" id="project">Front-End Projects</h1>
         <p class="projectdes">
           Here I list some of my Projects that build along with the Front-end Techdegree journey
         </p>
@@ -299,7 +301,7 @@
         </div>
       </div>
 
-      <div class="contact">
+      <div class="contact" id="contact">
         <form class="form">
           <h1 class="messageHeader h2 text-center">Message Me:</h1>
           <label for="name" class="nameLabel h2">Name:</label>
@@ -336,7 +338,7 @@
     </main>
     <footer class="main-footer">
       <div class="container">
-      <a href="#">
+      <a href="#home">
         Back To Top
       </a>
      </div>
